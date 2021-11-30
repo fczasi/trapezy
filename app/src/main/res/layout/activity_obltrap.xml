@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".obltrap"
+    android:layout_margin="25dp">
+
+    <TextView
+        android:id="@+id/giganapis2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pole tapezu:"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/podstawy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/giganapis2"
+        android:layout_marginLeft="30dp"
+        android:text="o podstawach" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/podstawy"
+        android:text="i wysokości"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/wysokosci"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wysokosci"
+        android:text="równa się"
+        android:id="@+id/rs"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:text="30"
+        android:layout_below="@+id/rs"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

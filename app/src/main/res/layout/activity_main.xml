@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="25dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zadanie 1"
+        android:layout_marginTop="30dp"
+        android:id="@+id/zad1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zad1"
+        android:id="@+id/czydodana">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wpisz liczbę"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/czydodanabutt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/czydodana"
+        android:layout_centerHorizontal="true"
+        android:onClick="scd"
+        android:text="Sprawdz czy dodana" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zadanie 2"
+        android:layout_marginTop="30dp"
+        android:id="@+id/zad2"
+        android:layout_below="@+id/czydodanabutt"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tu wpisz ades email"
+        android:layout_below="@+id/zad2"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/email"
+        />
+
+    <Button
+        android:id="@+id/emailbutt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_centerHorizontal="true"
+        android:onClick="sp"
+        android:text="sprawdź poprawność" />
+
+    <TextView
+        android:id="@+id/zad3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailbutt"
+        android:layout_marginTop="30dp"
+        android:text="Zadanie 3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/giganapis"
+        android:layout_below="@id/zad3"
+        android:layout_centerHorizontal="true"
+        android:text="Pole trapezu"
+        android:textSize="35dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/giganapis"
+        android:id="@+id/trapezdolL">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Podstawa dolna"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tdol"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trapezdolL"
+        android:id="@+id/trapezgorl">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Podstawa górna"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gdol"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trapezgorl"
+        android:id="@+id/trapezwysl">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wysokość"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gwys"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trapezwysl"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"
+        android:text="oblicz"
+        android:id="@+id/oblicz"/>
+
+</RelativeLayout>
