@@ -14,26 +14,44 @@
         android:text="Pole tapezu:"
         android:textSize="30dp" />
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/podstawy1"
+        android:layout_below="@+id/giganapis2">
     <TextView
         android:id="@+id/podstawy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/giganapis2"
         android:layout_marginLeft="30dp"
         android:text="o podstawach" />
-
-    <TextView
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/poddane"/>
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/podstawy"
-        android:text="i wysokości"
-        android:layout_marginLeft="30dp"
+        android:id="@+id/wysokosci1"
+        android:layout_below="@+id/podstawy1">
+    <TextView
         android:id="@+id/wysokosci"
-        />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/podstawy1"
+        android:layout_marginLeft="30dp"
+        android:text="i wysokości" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wysdane"/>
+
+    </LinearLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/wysokosci"
+        android:layout_below="@+id/wysokosci1"
         android:text="równa się"
         android:id="@+id/rs"
         android:layout_centerHorizontal="true"/>
